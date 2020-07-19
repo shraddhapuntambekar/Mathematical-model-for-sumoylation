@@ -1,0 +1,43 @@
+        %%%Reaction 1::  Pool->presumo  %Presumo formation 
+        Rate: param.k(1,1);
+
+        %%%Reaction 2::  presumo -> pool %%Presumo degradation 
+        Rate: param.k(2,1)*presumo;
+
+        %%%Reaction 3:: pool -> sumo  %%Sumo formation
+        Rate: param.k(3,1);
+        
+        %%%Reaction 4:: sumo ->pool    %% Sumo degradation
+        Rate: param.k(4,1)*sumo;
+         
+        %%%Reaction 5::  Pool->E3   % E3 formation 
+        Rate: param.k(5,1);
+
+        %%%Reaction 6:: E3 ->pool   %% E3 degradation 
+        Rate: param.k(6,1)*e3;
+        
+        %%%Reaction 7:: presumo + senp-> sumo   %% Processing
+        Rate: (param.k(7,2)*presumo)/(param.k(7,1)+presumo);
+
+        %%%Reaction 8:: sumo + e1 ->sumoe1(se1)  %% Activation
+	Rate: param.k(8,1)*sumo*e1;
+        
+        %%%Reaction 9:: se1+e2->se2+e1    %% Conjugation
+        Rate: param.k(9,1)*e2*se1 + (ke3*e3);
+           
+         %%%Reaction 10:: se2 + e10/ target -> e11/target*sumo + e2    %% Ligation of E1 and Targets
+        Rate: param.k(10,1)*se2*tar + (ke3*e3);
+         
+         %%%Reaction 11:: se10 + e20 -> e21 + e10  %%%% Ligation of E2 - Transfer of sumo on lys of e2 from cys of e1
+        Rate: param.k(11,1)*se1*e2 + (ke3*e3);
+         
+        %%%Reaction 12:: Tar*sumo -(senp)-> Tar + sumo  %%%% Deconjugation
+        Rate: (param.k(12,2)*tar-sumo)/(param.k(12,1)+tar-sumo);
+                 
+       %%% Reaction 13::  Pool->target  %target formation
+       Rate: param.k(13,1);
+          
+       %%% Reaction 14::  target -> pool %% Unsumoylated/sumoylated target degradation
+       Rate: param.k(14,1)*target;
+ 
+

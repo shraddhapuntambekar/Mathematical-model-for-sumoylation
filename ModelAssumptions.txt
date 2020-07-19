@@ -1,0 +1,6 @@
+Assumptions of the sumoylation model
+- Modification of the targets is modeled as independent of E3.
+- Detailed activation involving ATP usage was not considered
+- Different isoforms of SUMO and SENP are not considered.
+- Single site modification of the targets is considered.
+- Model does not distinguish between sumoylation of multiple lysines on a single target and poly-sumoylation at the single lysine on a modified target
