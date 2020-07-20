@@ -1,9 +1,8 @@
 # <b>Mathematical model for sumoylation</b>
 <b>Matlab codes to simulate mechanism-based, ODE model for a multi-step, multi-enzymatic post-translational modification in which a small ubiquitin-like modifier (SUMO) is attached to the target. The model includes enzyme mechanism details such as autosumoylation of E2 and also the bifunctional nature of SENP.</b>
 
-This is the first mathematical model for the sumoylation systems, the results of which are published in Puntambekar, S. S., Nyayanit, D., Saxena, P., & Gadgil, C. J. (2016). Identification of Unintuitive Features of Sumoylation through Mathematical Modeling. Journal of Biological Chemistry, 291(18), 9458-9468 (https://www.jbc.org/content/291/18/9458.full).
-Codes included in this project are to stimulate the system's concentration dynamics, to study steady state analysis (numerically and analytically) and to examine the effect of varying system's parameters on its steady state. 
-This model can be used to generate testable hypotheses for existence and mechanisms of unintuitive behaviours.
+This is the first mathematical model for the sumoylation systems, the results of which are published in Puntambekar, S. S., Nyayanit, D., Saxena, P., & Gadgil, C. J. (2016). Identification of Unintuitive Features of Sumoylation through Mathematical Modeling. Journal of Biological Chemistry, 291(18), 9458-9468 (https://www.jbc.org/content/291/18/9458.full).  
+Codes included in this project are to stimulate the system's concentration dynamics, to study steady state analysis (numerically and analytically) and to examine the effect of varying system's parameters on its steady state. The model can be used to generate testable hypotheses for existence and mechanisms of unintuitive behaviours.
 
 <b>(1) Folder: timecourse_steadystate/ </b>    
 The code allows to simulate a large range of experimental conditions, each being one specific combination of the following multiple possible scenarios: 
